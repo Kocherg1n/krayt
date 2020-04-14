@@ -55,6 +55,11 @@ section, .section {
 .title {
   font-size: 36px;
   @include Dosis-Regular;
+  margin-bottom: 23px;
+
+  &--centered {
+    text-align: center;
+  }
 
   @include phone {
     font-size: 32px;

@@ -1,0 +1,21 @@
+.projects {
+  background-color: #f7fafc;
+  padding: 120px 0;
+
+  &__content{
+
+  }
+
+  &__title {
+
+  }
+
+  &__description {
+    padding: 0 18%;
+    text-align: center;
+
+    @include phone {
+      padding: 0;
+    }
+  }
+}
