@@ -1,4 +1,5 @@
 // JS
+import 'jquery'
 import './js/'
 
 // SCSS
