@@ -48,3 +48,13 @@ $(document).ready(function () {
     ]
   })
 });
+
+// slow-scroll
+$(function () {
+  $('a[data-target^="anchor"]').bind('click.smoothscroll', function () {
+    const target = $(this).attr('href'),
+      bl_top = $(target).offset().top +60;
+    $('body, html').animate({scrollTop: bl_top}, 700);
+    return false;
+  })
+});
