@@ -1,0 +1,126 @@
+.about {
+  background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $secondFontColor;
+  position: relative;
+  overflow: hidden;
+
+  @include phone {
+    min-height: 0;
+    height: 100vh;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    background-image: url("/assets/img/iPhones.svg");
+    height: 628px;
+    width: 1066px;
+    background-size: 1066px 628px;
+    position: absolute;
+    background-repeat: no-repeat;
+    right: -110px;
+    bottom: 55px;
+
+    @include desktop {
+      height: 528px;
+      width: 766px;
+      background-size: 766px 528px;
+      right: -80px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @include laptop {
+      width: 666px;
+      background-size: 666px 528px;
+      right: -80px;
+    }
+
+    @include tablet {
+      width: 496px;
+      background-size: 496px 528px;
+      right: -70px;
+      top: 65%;
+    }
+
+    @include phone {
+      display: none;
+    }
+  }
+
+  &__content {
+    width: 500px;
+
+    @include phone {
+      width: 100%;
+      padding-top: 80px;
+    }
+  }
+
+  &__title {
+    font-size: 54px;
+    @include Dosis-SemiBold;
+
+    @include phone {
+      font-size: 48px;
+    }
+
+    @include phone-m {
+      font-size: 33px;
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    margin-top: 23px;
+  }
+
+  &__description-list {
+    margin-top: 23px;
+  }
+
+  &__description-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      content: url("/assets/img/icons/check.svg");
+      color: #f7fafc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 15px;
+      height: 15px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+  }
+
+  &__button {
+    padding: 13px 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 39px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background-color: $mainFontColor;
+      color: #ffffff;
+      transition: .2s;
+    }
+  }
+}
+
