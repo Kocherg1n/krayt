@@ -5,7 +5,7 @@
 ## Чтобы развернуть проект необходимо:
 
 ```sh
-$ git clone https://github.com/Kocherg1n/ITLAUNCH.git
+$ git clone https://github.com/Kocherg1n/krayt.git
 ```
 
 ## Скрипты package.json:
