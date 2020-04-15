@@ -49,7 +49,7 @@
 
 // slider setup
 
-.slick-reviews .slick-slider{
+.slick-reviews .slick-slider {
 
 }
 
@@ -73,7 +73,12 @@
   border: 1px solid #eeeeee;
   border-radius: 50%;
   font-size: 0;
-  background-color: #f31f79;
+  background-color: transparent;
+
+  &:hover {
+    background-color: #f31f79;
+    transition: .2s;
+  }
 }
 
 .slider-reviews .slick-arrow.slick-prev {
@@ -82,6 +87,11 @@
   top: 50%;
   transform: translateY(-50%);
   color: #ffffff;
+
+  &:after {
+    content: url("/assets/img/icons/left-arrow.svg");
+    display: block;
+  }
 
   @include desktop {
     left: -50px;
@@ -99,6 +109,11 @@
   top: 50%;
   transform: translateY(-50%);
 
+  &:after {
+    content: url("/assets/img/icons/right-arrow.svg");
+    display: block;
+  }
+
   @include desktop {
     right: -50px;
   }
@@ -107,11 +122,6 @@
     right: 35%;
     top: 108%;
   }
-}
-
-.slider-reviews .slick-arrow.slick-disabled {
-  //background-color: #ffffff;
-  opacity: .3;
 }
 
 .slider-reviews__item.slick-center {

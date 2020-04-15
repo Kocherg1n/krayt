@@ -1,6 +1,7 @@
 .projects {
   background-color: #f7fafc;
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 80px;
 
   &__content{
 
@@ -17,5 +18,9 @@
     @include phone {
       padding: 0;
     }
+  }
+
+  &__slider {
+    margin-top: 80px;
   }
 }

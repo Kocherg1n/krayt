@@ -26,7 +26,7 @@ mobileNavItem.forEach(el => {
 //slider-reviews
 $(document).ready(function () {
   $('.slick-reviews').slick({
-    infinite: false,
+    infinite: true,
     slidesToShow: 3,
     centerMode: true,
     centerPadding: '0px',
