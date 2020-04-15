@@ -33,10 +33,6 @@
     overflow: hidden;
   }
 
-  &__data {
-
-  }
-
   &__name {
     @include Dosis-SemiBold;
     font-size: 18px;
@@ -47,11 +43,7 @@
   }
 }
 
-// slider setup
-
-.slick-reviews .slick-slider {
-
-}
+// slick slider setup ============================== >>>
 
 .slick-reviews .slick-track {
   display: flex;
